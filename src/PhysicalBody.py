@@ -17,3 +17,10 @@ class PhysicalBody:
     def apply_force(self, force_vector):
         resulting_acceleration = force_vector * (1 / self.mass)
         self.acceleration = self.acceleration + resulting_acceleration
+
+    def check_collision(self, other_body):
+        resulting_vector = self.position - other_body.position
+        resulting_magnitude = resulting_vector.magnitude()
+        radius_sum = self.radius + other_body.radius
+
+        return radius_sum >= resulting_magnitude
