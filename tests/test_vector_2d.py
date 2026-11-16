@@ -1,4 +1,4 @@
-from src.vector_2d import Vector2D
+from src.physics.vector_2d import Vector2D
 
 def test_vector_addition():
     vector_a = Vector2D(2, 3)

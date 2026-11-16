@@ -1,7 +1,7 @@
-from src.gravity import gravity_force
-from src.physical_body import PhysicalBody
-from src.vector_2d import Vector2D
-from src.constants import GRAVITY_CONSTANT
+from src.physics.gravity import gravity_force
+from src.physics.physical_body import PhysicalBody
+from src.physics.vector_2d import Vector2D
+from src.physics.constants import GRAVITY_CONSTANT
 
 def test_gravity_force_calculation():
 
