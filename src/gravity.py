@@ -1,5 +1,5 @@
-from vector_2d import Vector2D
-from constants import GRAVITY_CONSTANT
+from .vector_2d import Vector2D
+from .constants import GRAVITY_CONSTANT
 
 def gravity_force(body_1, body_2):
 
