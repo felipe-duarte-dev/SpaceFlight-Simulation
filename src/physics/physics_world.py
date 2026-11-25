@@ -20,7 +20,7 @@ class PhysicsWorld:
             rocket.apply_force(gravity_force(rocket, earth))
 
         elif len(self.bodies) == 3:
-            earth, moon, rocket = self.bodies
+            earth, rocket, moon = self.bodies
             rocket.apply_force(gravity_force(rocket, earth))
             rocket.apply_force(gravity_force(rocket, moon))
             moon.apply_force(gravity_force(moon, earth))
